@@ -3,21 +3,21 @@
 % packages
 \usepackage{array}
 \usepackage{tabularx}
-\usepackage{booktabs}
-\usepackage{graphicx}
+\usepackage{booktabs} % Something with bib?
+\usepackage{graphicx} % I think it allows extra allignment commands
 \usepackage{framed}
 \usepackage{comment} % comment multiple lines
 \usepackage{spverbatim} % pasting large amounts of texts such as SQL code, and more
 \usepackage{alltt}
 \usepackage{float}
-\usepackage{url} % URLs used for 
-\usepackage{fancyhdr}
+\usepackage{url} % For URLs
+\usepackage{fancyhdr} % Header and footer
 \usepackage[utf8]{inputenc} % Use UTF 8. This allows æ, ø, å
 
 % commands
 \newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}} % custom command used for tables
-\newcommand{\specialcell}[1]{\begin{tabular}{@{}c@{}#1\end{tabular}}}
-\newcommand{\CS}{C\nolinebreak\hspace{-.05em}\raisebox{.6ex}{\tiny\bf \#}}
+\newcommand{\specialcell}[1]{\begin{tabular}{@{}c@{}#1\end{tabular}}} % We think it creates a box around stuff
+\newcommand{\CS}{C\nolinebreak\hspace{-.05em}\raisebox{.6ex}{\tiny\bf \#}} % Makes C#
 
 % define the author and title for frontpage
 \author{
@@ -30,7 +30,7 @@
 	Claus Lindquist Henriksen
 	}
 \title{BSUP, Spring 2013}
-\pagestyle{fancy}
+\pagestyle{fancy} % Header and footer
 \begin{document}
 \maketitle
 \tableofcontents
