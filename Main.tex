@@ -1,0 +1,52 @@
+\documentclass[a4paper,11pt]{article}
+
+% packages
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{framed}
+\usepackage{comment} % comment multiple lines
+\usepackage{spverbatim} % pasting large amounts of texts such as SQL code, and more
+\usepackage{alltt}
+\usepackage{float}
+\usepackage{url} % URLs used for 
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc} % Use UTF 8. This allows æ, ø, å
+
+% commands
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}} % custom command used for tables
+\newcommand{\specialcell}[1]{\begin{tabular}{@{}c@{}#1\end{tabular}}}
+\newcommand{\CS}{C\nolinebreak\hspace{-.05em}\raisebox{.6ex}{\tiny\bf \#}}
+
+% define the author and title for frontpage
+\author{
+	\textbf{Oz}\\
+	\textbf{Group 6}\\
+	Nicolai Ditlev Krogh Krüger\\
+	Philip Rasmussen\\
+	Morten Drescher Salling\\
+	Michael Søby Andersen\\
+	Claus Lindquist Henriksen
+	}
+\title{BSUP, Spring 2013}
+\pagestyle{fancy}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+% Inputs
+\input{texts/Abstract.tex}
+\input{texts/Introduction.tex}
+\input{texts/ProblemStatement.tex}
+\input{texts/ProblemAnalysis.tex}
+\input{texts/GettingBackOnTrack.tex}
+\input{texts/Discussion.tex}
+\input{texts/Conclusion.tex}
+\input{texts/Appendix.tex}
+
+% Add bibliography
+\bibliographystyle{cell}
+\bibliography{bib}
+\end{document}
