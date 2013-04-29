@@ -13,11 +13,16 @@
 \usepackage{url} % For URLs
 \usepackage{fancyhdr} % Header and footer
 \usepackage[utf8]{inputenc} % Use UTF 8. This allows æ, ø, å
+\usepackage{enumitem}
 
 % commands
 \newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}} % custom command used for tables
 \newcommand{\specialcell}[1]{\begin{tabular}{@{}c@{}#1\end{tabular}}} % We think it creates a box around stuff
 \newcommand{\CS}{C\nolinebreak\hspace{-.05em}\raisebox{.6ex}{\tiny\bf \#}} % Makes C#
+
+% Markup
+\setlength{\parskip}{0.8em} % Setting paragraph view
+\setlist[itemize]{itemsep=0.1em, topsep=0pt} % Setting disteance between items and around item group
 
 % define the author and title for frontpage
 \author{
