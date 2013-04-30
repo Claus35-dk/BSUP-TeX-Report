@@ -1,28 +1,37 @@
 \subsection{Quality assurance}
-To measure the quality of our client and to ensure as few errors as possible, we used the requirements we set for the client along with a test strategy, and the methods described earlier in this chapter. 
+To measure the quality of our client and to ensure as few errors as possible, we used the requirements set for the client, along with a test strategy, and the methods described earlier in this chapter.
 
-Doing our project, we move from the initial level of Capability Maturity Model, while developing the server, to the managed level during the development of the client. We kept to the initial level during the development of the server, by developing as we went along.
+[ TODO: Add a brief description of Capability Maturity Model ]
 
-The usage of a test strategy, increases the likelihood of finding errors early and correcting them, thereby minimizing the amount of time spend on debugging. When we define the test criteria, combined with the product requirements, we get one way of measuring quality.
-Regarding our project, we decided on a minimal test-strategy. The program's quality may have suffered from this, but the first part of the project was done without any strategy. The client was better tested than the first part of the project, though we were forced to keep testing at a minimal, due to lack of time.
+While doing our project, we moved from the initial level of the Capability Maturity Model (while developing the server) to the managed level (during the development of the client) \cite[p. ?]{?}. We kept to the initial level during the development of the server, by developing as we went along.
 
-If the product fulfills the requirements and pass the tests, its \textbf{reliability} has been proved as well. Which is one of CISQ's  major desirable characteristics. The other 4 are; efficiency, security, maintainability and size.
+The usage of a test strategy, increases the likelihood of finding errors early and correcting them, thereby minimizing the amount of time spend on debugging. When one define the test criteria, combined with the product requirements, we get one way of measuring quality \cite[p. ?]{?}. [TODO: Clarify previous line ]
+Regarding our project, we decided on a minimal test-strategy. The quality of the program may have suffered from this, but the first part of the project was done without any strategy. The client was better tested than the first part of the project, though we were forced to keep testing at a minimal, due to lack of time.
+
+If the product fulfills the requirements and pass the tests, its \textbf{reliability} has been proved as well, which is one of CISQ's  major desirable characteristics. The other 4 are; efficiency, security, maintainability and size \cite[p. ?]{?}.
+
+[ TODO: Explain briefly who CISQ is ]
+
 \begin{itemize}
-	\item Efficiency means that there is minimal to none code duplication, optimized algorithms etc. That the code runs as smooth and fast as possible at production.
-	\item Security is about how vulnerable the code is to direct attacks, if there are any obvious breaches then they affect this criteria.
-	\item Maintainability, how easy is it to understand and edit the product once in production. Documented code and the clear use of known design patterns does a lot good for the maintainability. 
-	\item Size is not a quality indicator per se, but can be used to asses the time needed to complete the product.\\ 
+	\item Efficiency means that there is minimal to none code duplication, the algorithms are optimized, etc. The code runs as smooth and fast as possible at production.
+	\item Security is about how vulnerable the code is to direct attacks. If there are any obvious breaches then they affect this criteria.
+	\item Maintainability: How easy is it to understand and edit the product once in production. Documented code and the clear use of known design patterns increases maintainability. 
+	\item Size is not a quality indicator per see, but can be used to asses the time needed to complete the product.
 \end{itemize}
 
-
-% What are the actual measureble values? And did we meet our goals?
 How our project is measured on these five characteristics:
 \begin{itemize}
- 	\item Our server's reliability have been a main focus of the group, the server will continue to run after most exception, though the server host has been unstable and have had some irregular uptime.
+ 	\item The reliability of our server have been a main focus of the group. The server will continue to run after most exceptions, though the server host has been unstable and have had some irregular uptime.
  	% How do we measure this?:
  	\item The efficiency parameter comes partly from our planning and software design and partly from our implementation.
  	% We don't encrypt anything
  	\item Our design assumes a minimal amount of security on the client side, most of the security is done by the server. We do secure sensitive information, but the security was not meant to sustain direct malicious intent.
- 	\item The client is maintainable, we have a well documented and responsibility driven product, making it easy for others to understand and maintain our code. 
+ 	\item The client is maintainable: We have a well documented and responsibility-driven product, making it easy for others to understand and maintain our code. 
 	\item Size can be used to determine whether we have made it too complicated. If we, from the beginning, had made interfaces for all the modules of our server, we would have seen an overly complex system, but we only discovered this after the server was almost completed. 
 \end{itemize}
+
+[ TODO: What are the actual measurable values? And did we meet our goals? ]
+
+[ TODO: Describe how we did code reviews. ]
+
+[ TODO: Update this section when we nearer submission ]
