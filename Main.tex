@@ -19,6 +19,8 @@
 \newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}} % custom command used for tables
 \newcommand{\specialcell}[1]{\begin{tabular}{@{}c@{}#1\end{tabular}}} % We think it creates a box around stuff
 \newcommand{\CS}{C\nolinebreak\hspace{-.05em}\raisebox{.6ex}{\tiny\bf \#}} % Makes C#
+\newcommand{\cref}[1]{ Figure \ref{#1}, page~\pageref{#1}}
+\newcommand{\acref}[1]{ Appendix, \cref{#1}}
 
 % Markup
 \setlength{\parskip}{0.8em} % Setting paragraph view
