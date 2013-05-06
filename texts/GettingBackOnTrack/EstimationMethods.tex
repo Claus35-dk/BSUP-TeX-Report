@@ -11,21 +11,7 @@ In the following we will present the methods we have used to estimate our tasks 
 \textbf{ [ TODO: Perhaps say something about, adding or removing items/functionality according to whether there is enough time or not ]}
 
 \subsubsection{Planning Poker}
-Multiple estimation methods exists, but for this part of the project, we have chosen to use Planning Poker, also know as SCRUM Poker, to estimate the remaining tasks.
-
-In Planning Poker, an identical deck of estimation cards is given to each `player'. Each card represents lengths in some selected estimation unit, such as man hours or story points. The cards usually follows the fibonacci sequence (0, 1, 2, 3, 5, 8, 13, ...) since tasks becomes increasingly harder to estimate accurately as they grow in size.
-To `play', two or more players are needed in addition to a moderator. The role of the moderator is to keep the game productive and focused, while the role of the players is to estimate tasks.
-For each task, a game of Planning Poker is played, each consisting of up to multiple rounds. A game is played as explained below \cite[p. 57]{aep}:
-\begin{enumerate}
-	\item The moderator starts each game by providing a short overview of the task. The players are able to ask questions and discuss to clarify assumptions and risks. During discussions, no player should express how long the task will take, or how `easy' the task is, as it will influence the estimates of other player subconsciously.
-	\item Next each player selects the card from their deck which matches their estimate best, and when all players are ready, all selected cards are revealed at the same time.
-	\item If the same estimation is not given by the players, the players with the highest and lowest estimates both justifies their estimate, after which the discussion continues.
-	\item Repeat from step two until consensus is reached.
-\end{enumerate}
-
-Planning Poker is within SCRUM used to estimate time of tasks at the backlog \cite[p. 56]{aep}. Planning Poker is usable within the WBS/PBS paradigm as well.
-
-Work Break Down Structure, or WBS, and Product Break Down Structure, or PBS, are tools used to define and delegate tasks of a product. WBS is used to divide a project into smaller and smaller parts until the individual parts are of a size where it can be given an estimate and assigned to one or more members of the group\cite[p. 117]{PM}. PBS is similar to WBS, but it focuses on the products of the project and on what is to be done\cite[p. 119]{PM}.
+Multiple estimation methods exists, but for this part of the project, we have chosen to use Planning Poker, also know as SCRUM Poker, to estimate the remaining tasks at the backlog.
 
 Planning Poker seemed like a good choice since we all have worked with SCRUM before, but not used Planning Poker. Now was a great opportunity to practice it.
 
@@ -41,9 +27,9 @@ The discussion might not always be an advantage, though. It can easily become ve
   \label{fig:scrumPokerCards}
 \end{figure}
 
-For our games we made playing cards with the numbers 1/2, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, `?' and `break'. The numbers represented man hours and the question-mark represented that the `player' was unable to give a good estimate, while the "break" card represented that the player needed a short break from the game (see figure \ref{fig:scrumPokerCards}).
+For our game we made playing cards with the numbers 1/2, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, `?' and `break'. The numbers represented man hours and the question-mark represented that the `player' was unable to give a good estimate, while the "break" card represented that the player needed a short break from the game (see figure \ref{fig:scrumPokerCards}).
 
-We found that using Planning Poker had several advantages over to what we previously had done. Beside the work-related advantages we also found it way more motivating than other methods, and all members of the group was included in the process. Yet, the high numbers (55 and 89) was never used, as well as the `break' card. The `?' was only rarely used, and at last not considered a valid card by the team, due to the fact that when playing the card the player did not participate in the discussion. Also it introduced the risk of only one person having a real estimation vote for the task.
+We found that using Planning Poker had several advantages over to what we previously had done. Compared to what we did in the first part of the project, we now got a real idea of how much time and effort we should put in each task - and in the rest of the project itself. Beside the work-related advantages we also found it way more motivating than other methods, and all members of the group was included in the process. Yet, the high numbers (55 and 89) was never used, as well as the `break' card. The `?' was only rarely used, and at last not considered a valid card by the team, due to the fact that when playing the card the player did not participate in the discussion. Also it introduced the risk of only one person having a real estimation vote for the task.
 
 \subsubsection{CoCoMo estimation}
 CoCoMo is an algorithmic software cost estimation method. With basic CoCoMo one can calculate time estimations depending on the size of the team and the experience of the team, combined with estimated Kilo Lines Of Code (KLOC) and factoring the programming language. It can also be used in other ways. Estimating the other variables, the remaining variable can be calculated, for example cost of project or team size required. One can add many more factors to the CoCoMo calculation: Complexity, reliability, hardware constraints, and more \cite[p. 147]{PM}.
