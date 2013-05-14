@@ -5,16 +5,23 @@ So far we have covered the time aspect of managing a project, but have not menti
 The costs aspect does not apply to our project, since all hardware, labor, and work facilities are cost-free, leaving only time-independent costs such as those for printing the final report.
 Remaining to be discussed is therefore only the quality aspect of managing our project.
 
-To manage the quality of our produced product we have defined a testing strategy. To manage the quality of our 
+To manage the quality of our project, we have devised a procedure for each area we wish manage quality within: To manage the quality of the produced product we have defined a testing strategy; to manage the quality of the code behind the product, we have utilized pair programming as a concurrent form of continuous code review.
+
+Our testing strategy covers the basic functionality of the business logic (i.e. does it do what it is meant to), including correct error handling. The functionality is not equivalence partitioned
+
+
+. These tests are automatized through the use of unit tests.
+For 
+
+Our testing strategy is not exhaustive, but we believe it is adequate.
 
 Blah, blah, blah
 
-- to measure the quality of our product ....
 
 
 - Testing strategy (basic functionality, not value boundaries (equavalence partioning), not widget/GUI, exceptions)
 
-- Pair programming (weak + weak (+ stronger))
+- Pair programming (weak + weak (+ stronger)) - investment, more work early, work spared in the long run
 
 - Test against requirements (measure quality)
 
@@ -26,9 +33,6 @@ Blah, blah, blah
 
 
 
-To measure the quality of our client and to ensure as few errors as possible, we used the requirements set for the client, along with a test strategy, and the methods described earlier in this chapter.
-
-The usage of a test strategy, increases the likelihood of finding errors early and correcting them, thereby minimizing the amount of time spend on debugging.
 Regarding our project, we decided on a minimal test-strategy. The quality of the program may have suffered from this, but the first part of the project was done without any strategy. The client was better tested than the first part of the project, though we were forced to keep testing at a minimal, due to lack of time.
 
 During the project's development phase, we had code reviews, first after the server was done. Mainly in order to have everybody understand what the different parts of the server did. In addition it had the effect of illuminating code duplication and poor programming choices, while it was too late to change most of these it showed how useful a tool it is.
