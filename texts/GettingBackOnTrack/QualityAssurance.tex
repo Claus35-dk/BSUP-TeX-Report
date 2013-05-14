@@ -1,45 +1,34 @@
 % !TeX spellcheck = en_US
 \subsection{Quality assurance}
 
-\textbf{[ TODO: Proofread this section, ensure that it answers all quality questions asked previously, and ensure that all answers are documented. ]}
+So far we have covered the time aspect of managing a project, but have not mentioned the other two aspects expressed by the triple constraint (see figure 1).
+The costs aspect does not apply to our project, since all hardware, labor, and work facilities are cost-free, leaving only time-independent costs such as those for printing the final report.
+Remaining to be discussed is therefore only the quality aspect of managing our project.
+
+To manage the quality of our produced product we have defined a testing strategy. To manage the quality of our 
+
+Blah, blah, blah
+
+- to measure the quality of our product ....
+
+
+- Testing strategy (basic functionality, not value boundaries (equavalence partioning), not widget/GUI, exceptions)
+
+- Pair programming (weak + weak (+ stronger))
+
+- Test against requirements (measure quality)
+
+
+- maintain, measure quality
+
+
+
+
+
 
 To measure the quality of our client and to ensure as few errors as possible, we used the requirements set for the client, along with a test strategy, and the methods described earlier in this chapter.
-
- The Capability Maturity Model, created by the Software Engineering Institute of Carnegie Mellon University, describes the development process an organization must pass through to be considered mature.
- 
- \begin{figure}[t]
-  \includegraphics[width=\textwidth]{illustrations/CMM.jpg}
-  \caption{Capability Maturity Model. Source: [\textit{http://www.tutorialspoint.com/cmmi/cmmi-maturity-levels.htm}]}
-  \label{fig:Capability_Maturity_Model}
-\end{figure}
-
-While doing our project, we moved from the initial level of the Capability Maturity Model (while developing the server) to the managed level (during the development of the client) \cite[p. 242]{PM}. We kept to the initial level during the development of the server, by developing as we went along without using well known development methods or initial design (see figure \ref{fig:Capability_Maturity_Model}). It illuminates exactly what we want to show in this report, that using many of these tools gives us a huge advantage of producing a product, while not using any of these tools it is very uncertain any useful product can be made.
 
 The usage of a test strategy, increases the likelihood of finding errors early and correcting them, thereby minimizing the amount of time spend on debugging.
 Regarding our project, we decided on a minimal test-strategy. The quality of the program may have suffered from this, but the first part of the project was done without any strategy. The client was better tested than the first part of the project, though we were forced to keep testing at a minimal, due to lack of time.
 
-CISQ, the Consortium for IT Software Quality, is comprised by people from different parts of the software industry. It is a neutral forum for customers and suppliers of IT to define, measure and improve IT quality.
-
-If the product fulfills the requirements and pass the tests, its \textbf{reliability} has been proved as well, which is one of CISQ's  major desirable characteristics. The other 4 are; efficiency, security, maintainability and size \cite{CISQ}
-
-\textbf{[ TODO: Update the source if its still is needed once this has been rewritten. ]}
-
-\begin{itemize}
-	\item Efficiency means that there is minimal to none code duplication, the algorithms are optimized, etc. The code runs as smooth and fast as possible at production.
-	\item Security is about how vulnerable the code is to direct attacks. If there are any obvious breaches then they affect this criteria.
-	\item Maintainability: How easy is it to understand and edit the product once in production. Documented code and the clear use of known design patterns increases maintainability. 
-	\item Size is not a quality indicator per see, but can be used to asses the time needed to complete the product.
-\end{itemize}
-
-How our project is measured on these five characteristics:
-\begin{itemize}
- 	\item The reliability of our server have been a main focus of the group. The server will continue to run after most exceptions, though the server host has been unstable and have had some irregular uptime.
- 	\item The efficiency parameter comes partly from our planning and software design and partly from our implementation. This where our client differ from our server thanks to the tools we chose to use, the efficiency of the server is determined by what we found worked while coding it.
- 	\item We have not prioritized security, the server does not encrypt anything. Nor is the connection between the server and client encrypted. We have deliberately chosen this as we found other elements such as streaming, more important. We acknowledge this as unacceptable if it was an actual product.  
- 	\item The client is maintainable: We have a well documented and responsibility-driven product, making it easy for others to understand and maintain our code. The server is documented as well, but it is not as transparent as the client.
-	\item Size can be used to determine whether we have made it too complicated. If we, from the beginning, had made interfaces for all the modules of our server, we would have seen an overly complex system, but we only discovered this after the server was almost completed. While our client seems large it is a conscious choice to lessen the complexity of the individual classes.  
-\end{itemize}
-
 During the project's development phase, we had code reviews, first after the server was done. Mainly in order to have everybody understand what the different parts of the server did. In addition it had the effect of illuminating code duplication and poor programming choices, while it was too late to change most of these it showed how useful a tool it is.
-
-\textbf{[ TODO: Update this section when we nearer submission ]}
