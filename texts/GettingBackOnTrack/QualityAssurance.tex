@@ -8,7 +8,7 @@ Remaining to be covered is therefore only the quality aspect of managing our pro
 To manage the quality of our project, we have devised a procedure for each area we wish manage quality within: To manage the quality of the produced product we have defined a testing strategy; to manage the quality of the code behind the product, we have utilized pair programming as a concurrent form of continuous code review.
 
 Our testing strategy dictates that the basic functionality of the business logic is tested using automatic unit tests. The tests should test that the business logic at a basic level works as it is meant to, including that it fails correctly in miscellaneous error situations.
-As a compromise between quality and available time, the unit tests should not be test trivial border value cases, which otherwise could be identified through equivalence partitioning.
+As a compromise between quality and available time, the unit tests should not test trivial border value cases, which otherwise could be identified through equivalence partitioning.
 All code related to the GUI of the program should not be tested by unit tests, only by the authoring developer quickly going through the different states the GUI is able to express, checking that all works and looks as expected.
 Our testing strategy is by no means exhaustive, but we believe it is adequate.
 
