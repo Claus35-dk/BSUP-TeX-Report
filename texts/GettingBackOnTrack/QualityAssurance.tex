@@ -12,22 +12,8 @@ As a compromise between quality and available time, the unit tests should not be
 All code related to the GUI of the program should not be tested by unit tests, only by the authoring developer quickly going through the different states the GUI is able to express, checking that all works and looks as expected.
 Our testing strategy is by no means exhaustive, but we believe it is adequate.
 
+To ensure the quality of the code, pair programming has been applied to the project whenever possible. Through the tools and languages used for the second part of the project is not new to the group members, some are more experienced than others.
+We have used this as a benefit, pairing the less experienced with a more experienced group member during development. Additionally, most of the produced code have been reviewed by the most experienced group member which have taken care that any found error or bad design decision was corrected.
+Doing these continuous code reviews adds some overhead, but it is an investment: When an error or bad design decision is identified and corrected early on, the time it has taken is usually far shorter than the time it would have taken later, when new layers of code has been based on the bad code and the mistake has accumulated into many more \cite[p. ?]{?}.
 
-
-Blah, blah, blah
-
-- Pair programming (weak + weak (+ stronger)) - investment, more work early, work spared in the long run
-
-- Test against requirements (measure quality)
-
-
-- maintain, measure quality
-
-
-
-
-
-
-Regarding our project, we decided on a minimal test-strategy. The quality of the program may have suffered from this, but the first part of the project was done without any strategy. The client was better tested than the first part of the project, though we were forced to keep testing at a minimal, due to lack of time.
-
-During the project's development phase, we had code reviews, first after the server was done. Mainly in order to have everybody understand what the different parts of the server did. In addition it had the effect of illuminating code duplication and poor programming choices, while it was too late to change most of these it showed how useful a tool it is.
+To measure the quality of our product and deem whether it is acceptable, we have decided to acceptance test it against its requirements. If all requirements are met, the quality of the product is acceptable.
