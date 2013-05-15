@@ -1,25 +1,20 @@
 % !TeX spellcheck = en_US
 \subsection{Quality assurance}
 
-So far we have covered the time aspect of managing a project, but have not mentioned the other two aspects expressed by the triple constraint (see figure 1).
+So far we have covered the time aspect of managing our project, but have not mentioned the other two aspects expressed by the triple constraint (see figure 1).
 The costs aspect does not apply to our project, since all hardware, labor, and work facilities are cost-free, leaving only time-independent costs such as those for printing the final report.
-Remaining to be discussed is therefore only the quality aspect of managing our project.
+Remaining to be covered is therefore only the quality aspect of managing our project.
 
 To manage the quality of our project, we have devised a procedure for each area we wish manage quality within: To manage the quality of the produced product we have defined a testing strategy; to manage the quality of the code behind the product, we have utilized pair programming as a concurrent form of continuous code review.
 
-Our testing strategy covers the basic functionality of the business logic (i.e. does it do what it is meant to), including correct error handling. The functionality is not equivalence partitioned
+Our testing strategy dictates that the basic functionality of the business logic is tested using automatic unit tests. The tests should test that the business logic at a basic level works as it is meant to, including that it fails correctly in miscellaneous error situations.
+As a compromise between quality and available time, the unit tests should not be test trivial border value cases, which otherwise could be identified through equivalence partitioning.
+All code related to the GUI of the program should not be tested by unit tests, only by the authoring developer quickly going through the different states the GUI is able to express, checking that all works and looks as expected.
+Our testing strategy is by no means exhaustive, but we believe it is adequate.
 
 
-. These tests are automatized through the use of unit tests.
-For 
-
-Our testing strategy is not exhaustive, but we believe it is adequate.
 
 Blah, blah, blah
-
-
-
-- Testing strategy (basic functionality, not value boundaries (equavalence partioning), not widget/GUI, exceptions)
 
 - Pair programming (weak + weak (+ stronger)) - investment, more work early, work spared in the long run
 
