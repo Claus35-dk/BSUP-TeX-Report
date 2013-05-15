@@ -1,8 +1,19 @@
 \section{Discussion}
 % 1 page
-Looking on the current state of the project, at the time of writing there is still one week left until deadline, our estimation holds more or less. We have encountered scenarios where we need do some tasks that was not defined in the beginning. Beside the extra tasks, we encountered problems with the server we made in the first part of the project, problems that could not be foreseen. The problems where mainly due to lack of proper testing of the server. When encountered with these problems, we where forced to locate if the error was in the newly created client code, or if the error originated in the server. This last part only stresses the importance of proper quality assurance.
+From the state of the project at the time of writing, with one week left to deadline, our estimations seem to be more or less correct. Important tasks not anticipated from the start have shown, however, meaning that our task estimations largely holds, but the overall estimation of the required time to finish the project does not.
 
-By looking at our burndownchart (\textbf{[INSERT REF TO CHART]}) it is seen that the two lines lines up really nicely at the moment. Thou the project seems to be on track, and we should be able to reach the if we continue with this progress. Also it is seen that it is only recently that the project got back on track. This is mainly due to the extra effort needed to be made because of the problems stated in the above paragraph. Many of the problems with the server should no longer be of any concern since most of the connection with the server has been done, and therefore most of the tasks left is concerned with creating a functional GUI. \\
+Beside the extra tasks not initially planned for the backlog, unforeseen problems have occurred on the server we developed doing the first part of the project. We had foreseen that some errors probably would arise in regards to functionality on the server, but we had no idea what would fail, how much would fail, how long it would take to debug, or how long it would take to fix the errors if needed.
+
+So far the server errors have been easy to fix, but each time an error has been encountered, time unproportional to the problem itself has been wasted determining whether the error origins from the server or from our newly created client.
+This uncertainty is due to poor error reporting facilities, combined with lack of proper testing on the server. The last part only stresses the importance of proper quality assurance.
+
+Though our plans have been subject to delays, the project seems to be back on track. This is suggested by our burndown chart (see figure \ref{burndown} in the appendix) where the lines line up really nicely at the moment. If we are able to continue as currently, we should be able to meet the deadline with all planned functionality implemented for the client.
+
+An important hint at this can also been extracted from the burndown chart, which shows that it is only recently that the project got back on track. This is mainly due to the extra effort which has been needed in order to solve the server problems stated above.
+The server and its potential errors should no longer be of any concern since most of the code responsible for communication with the server has been implemented and tested, thereby by large only leaving tasks concerned with creating a functional GUI.
+
+---------------
+
 Beside the code, we also have to write a report for the project. A report that at this time hardly has been started - but have been split into tasks and estimated.
 Even though it is primary the GUI components (beside the report) that is left to be done, extra tasks is bound to origin if we look at how is has been so far. Still, we have shown that we are able to catch up with the schedule even though we are behind. Therefore it should be possible for us to meet the deadline. In the worst case we need to downgrade some of the planned functionality or even discard some of them.
 
@@ -25,28 +36,4 @@ To be done...
 - Capability Maturity Model improvement
 
 - How well did we manage to rescue the project as seen from the current state of the project? Do it seem like we are succeeding? The report needs much work, we are barely started.
- 
-----------------------------
-
-CISQ, the Consortium for IT Software Quality, is comprised by people from different parts of the software industry. It is a neutral forum for customers and suppliers of IT to define, measure and improve IT quality.
-
-If the product fulfills the requirements and pass the tests, its \textbf{reliability} has been proved as well, which is one of CISQ's  major desirable characteristics. The other 4 are; efficiency, security, maintainability and size \cite{CISQ}
-
-\textbf{[ TODO: Update the source if its still is needed once this has been rewritten. ]}
-
-\begin{itemize}
-	\item Efficiency means that there is minimal to none code duplication, the algorithms are optimized, etc. The code runs as smooth and fast as possible at production.
-	\item Security is about how vulnerable the code is to direct attacks. If there are any obvious breaches then they affect this criteria.
-	\item Maintainability: How easy is it to understand and edit the product once in production. Documented code and the clear use of known design patterns increases maintainability. 
-	\item Size is not a quality indicator per see, but can be used to asses the time needed to complete the product.
-\end{itemize}
-
-How our project is measured on these five characteristics:
-\begin{itemize}
- 	\item The reliability of our server have been a main focus of the group. The server will continue to run after most exceptions, though the server host has been unstable and have had some irregular uptime.
- 	\item The efficiency parameter comes partly from our planning and software design and partly from our implementation. This where our client differ from our server thanks to the tools we chose to use, the efficiency of the server is determined by what we found worked while coding it.
- 	\item We have not prioritized security, the server does not encrypt anything. Nor is the connection between the server and client encrypted. We have deliberately chosen this as we found other elements such as streaming, more important. We acknowledge this as unacceptable if it was an actual product.  
- 	\item The client is maintainable: We have a well documented and responsibility-driven product, making it easy for others to understand and maintain our code. The server is documented as well, but it is not as transparent as the client.
-	\item Size can be used to determine whether we have made it too complicated. If we, from the beginning, had made interfaces for all the modules of our server, we would have seen an overly complex system, but we only discovered this after the server was almost completed. While our client seems large it is a conscious choice to lessen the complexity of the individual classes.  
-\end{itemize}
 \newpage
